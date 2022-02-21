@@ -18,7 +18,7 @@ public class TrainSensorTest {
     }
 
     @Test
-    public void ThisIsAnExampleTestStub() {
+    public void OurTest() {
         System.out.println("This is out JUnit test");
     }
 }
