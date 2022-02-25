@@ -1,6 +1,6 @@
 package hu.bme.mit.train.tachno;
 
-import com.google.*;
+
 import com.google.common.collect.Table;
 
 import java.util.Date;
