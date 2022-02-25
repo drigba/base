@@ -9,6 +9,7 @@ import org.junit.Test;
 import java.util.Date;
 
 public class TestTachnoGraph {
+
     @Test
     public void Test1(){
         TachnographImpl t = new TachnographImpl();
