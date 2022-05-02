@@ -13,7 +13,20 @@ public class TrainControllerImpl implements TrainController {
 	private Timer timer;
 
 	
-	public TrainControllerImpl(int d = 500, int p = 1000){
+	public TrainControllerImpl(){
+		timer = new Timer();
+		TimerTask tt = new TimerTask(){
+			@Override	
+			public void run(){
+				followSpeed();
+			}
+			
+		};
+		timer.scheduleAtFixedRate(tt, delay, period);
+	}	
+
+
+	public TrainControllerImpl(){
 		timer = new Timer();
 		delay = delay;
 		period = p;
