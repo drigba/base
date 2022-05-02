@@ -7,6 +7,21 @@ public class TrainControllerImpl implements TrainController {
 	private int step = 0;
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
+	private int delay = 500;
+	private int period = 1000;
+	private Timer timer;
+
+	public TrainControllerImp(){
+		timer = new Timer();
+		TimerTask tt = new TimerTask(){
+			@Override	
+			public void run(){
+				this.followSpeed()
+			}
+			
+		}
+		timer.scheduleAtFixedRate(tt, delay, period)
+	}	
 
 	@Override
 	public void followSpeed() {
