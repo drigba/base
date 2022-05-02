@@ -12,7 +12,8 @@ public class TrainControllerImpl implements TrainController {
 	private int period = 1000;
 	private Timer timer;
 
-	public TrainControllerImpl(int d, int p){
+	
+	public TrainControllerImpl(int d = 500, int p = 1000){
 		timer = new Timer();
 		delay = delay;
 		period = p;
