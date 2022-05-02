@@ -11,7 +11,7 @@ public class TrainControllerImpl implements TrainController {
 	private int period = 1000;
 	private Timer timer;
 
-	public TrainControllerImp(){
+	public TrainControllerImpl(){
 		timer = new Timer();
 		TimerTask tt = new TimerTask(){
 			@Override	
