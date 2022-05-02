@@ -19,7 +19,7 @@ public class TrainControllerImpl implements TrainController {
 				this.followSpeed();
 			}
 			
-		}
+		};
 		timer.scheduleAtFixedRate(tt, delay, period);
 	}	
 
