@@ -26,9 +26,9 @@ public class TrainControllerImpl implements TrainController {
 	}	
 
 
-	public TrainControllerImpl(){
+	public TrainControllerImpl(int d, int p){
 		timer = new Timer();
-		delay = delay;
+		delay = d;
 		period = p;
 		TimerTask tt = new TimerTask(){
 			@Override	
