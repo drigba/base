@@ -10,7 +10,7 @@ public class TrainControllerImpl implements TrainController {
 	private Thread thread;
 
 	public TrainControllerImpl(){
-		thred = new Thread(){
+		thread = new Thread(){
 			public void run(){
 				thread.run();
 				try{
