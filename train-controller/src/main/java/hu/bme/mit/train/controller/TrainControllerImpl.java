@@ -16,11 +16,11 @@ public class TrainControllerImpl implements TrainController {
 		TimerTask tt = new TimerTask(){
 			@Override	
 			public void run(){
-				this.followSpeed()
+				this.followSpeed();
 			}
 			
 		}
-		timer.scheduleAtFixedRate(tt, delay, period)
+		timer.scheduleAtFixedRate(tt, delay, period);
 	}	
 
 	@Override
